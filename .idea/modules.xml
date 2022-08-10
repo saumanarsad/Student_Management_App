@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Student_Management_App.iml" filepath="$PROJECT_DIR$/.idea/Student_Management_App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PycharmProjects/W3 Django/.idea/W3 Django.iml" filepath="$PROJECT_DIR$/../PycharmProjects/W3 Django/.idea/W3 Django.iml" />
     </modules>
   </component>
 </project>
