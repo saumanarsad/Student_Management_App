@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add student</title>
+</head>
+<body>
+
+<h1>Add new students</h1>
+
+<form action="addrecord/" method="POST">
+    {% csrf_token %}
+    Please enter the first name: <br>
+    <input name="first">
+    <br><br>
+    Please enter your last name : <br>
+    <input name="last">
+    <br><br>
+
+    <input type="submit" name="Submit">
+
+
+</form>
+</body>
+</html>
