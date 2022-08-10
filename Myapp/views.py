@@ -35,6 +35,7 @@ def update(request,id):
     return HttpResponse(template.render(context,request))
 
 def updaterecord(request,id):
+
     student = Students.objects.get(id=id)
     first = request.POST["first"]
     last = request.POST["last"]
