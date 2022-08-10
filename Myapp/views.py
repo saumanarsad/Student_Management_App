@@ -26,3 +26,4 @@ def addrecord(request):
 def delete(request,id):
     student = Students.objects.get(id=id)
     student.delete()
+    return HttpResponseRedirect(reverse('index'))
