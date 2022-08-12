@@ -25,3 +25,21 @@ def addrecord(request):
 
 def delete(request,id):
     student = Students.objects.get(id=id)
+    student.delete()
+    return HttpResponseRedirect(reverse('index'))
+
+def update(request,id):
+    student = Students.objects.get(id=id)
+    template = loader.get_template('update.html')
+    context = {'mystudent' : student}
+    return HttpResponse(template.render(context,request))
+
+def updaterecord(request,id):
+
+    student = Students.objects.get(id=id)
+    first = request.POST["first"]
+    last = request.POST["last"]
+    student.firstname = first
+    student.lastname =  last
+    student.save()
+    return HttpResponseRedirect(reverse('index'))

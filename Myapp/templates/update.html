@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Student record</title>
+</head>
+<body>
+<h1>Update Student info.</h1>
+<h4>Student to update:{{mystudent.firstname}}</h4>
+
+<form action="updaterecord/{{mystudent.id}}" method="post">
+    {% csrf_token  %}
+    Enter the updated firstname : <br>
+    <input name="first" >
+    <br><br>
+    Enter the updated last name : <br>
+    <input name="last">
+    <br><br>
+
+    <input type="submit" name="Submit">
+
+</form>
+</body>
+</html>
