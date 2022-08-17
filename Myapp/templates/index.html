@@ -13,6 +13,10 @@
 
 <h1>Students</h1>
 
+<h2>Welcome {{user.username}}</h2>
+{%if user.is_authenticated%}
+    <button><a href="/logout">Logout</a></button>
+{% endif %}
 <table border="1" class="table">
     {% for x in mystudents %}
 
